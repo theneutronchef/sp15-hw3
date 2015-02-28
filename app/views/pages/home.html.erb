@@ -1,0 +1,21 @@
+<h1> RubyOnRails Decal - Homework 3 </p>
+
+<h2>List of Users</h2>
+<% for user in @users %>
+  <p> My username is <%= user.username %>. My email is <%= user.email %>, and I am <%= user.age %> years old. </p>
+<% end %>
+
+<h2>List of Cats</h2>
+<% for cat in @cats %>
+  <p> <%= cat.name %> says <%= cat.meow %>. </p>
+<% end %>
+
+<h2> To-Do List</h2>
+<h3> Completed </h3>
+<% for todo in @todos_finished %>
+  <p> <%= todo.tasks %>: <%= todo.finished %>. </p>
+<% end %>
+<h3> Unfinished </h3>
+<% for todo in @todos_unfinished %>
+  <p> <%= todo.tasks %>: <%= todo.finished %>. </p>
+<% end %>
